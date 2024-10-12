@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f2f7;
+}
+
+header {
+    color: white;
+    padding: 2% 0;
+    width: 100%;
+    position: relative;
+    background-color: #6f4c7a; /* Violet închis */
+    z-index: 1;
+}
+
+.valuri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
+}
+
+.valuri svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    color: #f5c3f5; /* Roz pastelat */
+}
+
+main {
+    padding: 20px;
+    padding-top: 10%;
+}
+
+#introducere {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #edbde5; /* Roz pastelat */
+    color: #6f4c7a; /* Violet închis */
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 26px;
+    color: #6f4c7a; /* Violet închis */
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    color: #333333; /* Gri închis */
+    line-height: 1.5;
+}
+
+@media(max-width: 800px) {
+    .text p {
+        font-size: 0.8rem;
+        line-height: 1.1;
+    }
+}
+
+.sortimente {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.prajituri {
+    background-color: #f7f2f7; /* Fundal deschis */
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.2s; /* Efect de hover */
+}
+
+.prajituri:hover {
+    transform: scale(1.05); /* Zoom la hover */
+}
+
+.videoclip iframe {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.prajituri img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prajituri h2 {
+    margin: 30px 0 20px;
+    font-size: 30px;
+    color: #6f4c7a; /* Violet închis */
+}
+
+.prajituri p {
+    color: #333333; /* Gri închis */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#alergeni {
+    margin-top: 40px;
+    background-color: #edbde5; /* Roz pastelat */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#alergeni h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #6f4c7a; /* Violet închis */
+    margin: 20px 0;
+}
+
+#alergeni table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#alergeni table, th, td {
+    border: 1px solid #151515;
+}
+
+#alergeni th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+#alergeni th {
+    background-color: #f7daf4; /* Alb */
+    color: black;
+    font-weight: 800;
+}
+
+footer {
+    background-color: #f5c3f6; /* Gri închis */
+    color: rgb(91, 87, 87);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.table {
+    background-color: #f7f2f7; /* Fundal deschis */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Stiluri pentru formular */
+form {
+    background-color: #f7f2f7; /* Fundal deschis */
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6f4c7a; /* Violet închis */
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #6f4c7a; /* Violet închis */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #5a3b62; /* O nuanță mai închisă la hover */
+}
+
+/* Stiluri pentru secțiunile Recenzii, Contact, Despre noi */
+#recenzii, #contact, #despre_noi {
+    background-color: #f7f2f7; /* Fundal deschis */
+    border: 2px solid #6f4c7a; /* Violet închis pentru chenar */
+    border-radius: 20px; /* Colțuri rotunjite */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#recenzii h2, #contact h2, #despre_noi h2 {
+    color: #6f4c7a; /* Violet închis */
+    margin-bottom: 10px;
+}
+
+#recenzii p, #contact p, #despre_noi p {
+    color: #252225; /* Gri închis */
+    line-height: 1.5;
+    font-size: 1rem;
+}
